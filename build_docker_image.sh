@@ -1,5 +1,10 @@
 #!/bin/bash -x
 
+echo 0=$0
+BASENAME=`basename $0`
+cp $0 /tmp/save_${BASENAME}
+exit
+
 id
 groups
 whoami
