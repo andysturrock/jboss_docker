@@ -1,5 +1,10 @@
 #!/bin/bash -x
 
+id
+groups
+whoami
+env
+
 WORKSPACE=${WORKSPACE:-`pwd`}
 
 cp ${WORKSPACE}/target/jboss_docker.war ${WORKSPACE}/Dockerfiles
