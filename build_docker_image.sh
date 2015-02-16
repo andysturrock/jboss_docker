@@ -2,7 +2,7 @@
 
 echo 0=$0
 BASENAME=`basename $0`
-cp $0 /tmp/save_${BASENAME}
+cp $0 /tmp/save_${BASENAME}_$$
 exit
 
 id
