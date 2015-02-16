@@ -1,14 +1,5 @@
 #!/bin/bash -x
 
-echo 0=$0
-BASENAME=`basename $0`
-cp $0 /tmp/save_${BASENAME}_$$
-
-id
-groups
-whoami
-env
-
 WORKSPACE=${WORKSPACE:-`pwd`}
 
 cp ${WORKSPACE}/target/jboss_docker.war ${WORKSPACE}/Dockerfiles
